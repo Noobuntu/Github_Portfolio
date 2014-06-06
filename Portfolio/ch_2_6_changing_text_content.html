@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Test Page</title>
+  <script src="js/jquery-2.1.1.min.js"></script><!--Initializes the JQuery library-->
+  <script>$(document).ready(function(){<!--Waits for the page to finish loading before executing code-->
+    var strongContent = $('strong').html();
+	var pContent = $('p').html();
+	$('strong').html(pContent);
+	$('p').html(strongContent);
+    })
+  </script>
+</head>
+<body>
+  <strong>This is the code in the strong element.</strong>
+  <p>This is the code in the P element.
+  <img src="images/cover1.jpg" alt="cover1"> </p>
+</body>
+</html>

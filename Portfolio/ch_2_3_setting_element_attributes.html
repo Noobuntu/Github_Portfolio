@@ -2,14 +2,20 @@
 <html>
 <head>
   <title>My Test Page</title>
-  <script src="js/jquery-2.1.1.min.js"></script><!--Initializes the JQuery library-->
-  <script>$(document).ready(function(){<!--Waits for the page to finish loading before executing code-->
-    $('img').attr({src: 'images/cover2.jpg', alt: 'cover2'});<!--Changes the picture that is loaded in the img tag from cover1 to cover2.-->
+  
+  <!--Initializes the JQuery library-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  
+  <!--Waits for the page to finish loading before executing code-->
+  <script>$(document).ready(function(){
+    
+	<!--Changes the picture that is loaded in the img tag from cover1 to cover2.-->
+	$('img').attr({src: 'images/cover2.jpg', alt: 'cover2'});
     })
   </script>
 </head>
 <body>
-  <p>This is my test page.</p>
+  <strong>This is my test page.</strong>
   <img src="images/cover1.jpg" alt="cover1"> 
 </body>
 </html>

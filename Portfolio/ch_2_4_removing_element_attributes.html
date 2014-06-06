@@ -8,17 +8,14 @@
   
   <!--Waits for the page to finish loading before executing code-->
   <script>$(document).ready(function(){
-  
-	<!--Declares the pContent variable and stores the contents of the paragraph tag-->
-    var pContent = $('p').text();
-	
-	<!--Sends up an alert box displaying stored value of the paragraph tag-->
-	alert (pContent);
+    
+	<!--Removes the height of the picture.-->
+	$('img').removeAttr({'height'});
     })
   </script>
 </head>
 <body>
   <strong>This is my test page.</strong>
-  <p>This some text.</p>
+  <img src="images/cover2.jpg" alt="cover2"> 
 </body>
 </html>

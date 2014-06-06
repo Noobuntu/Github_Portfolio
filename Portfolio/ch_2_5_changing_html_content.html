@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Test Page</title>
+  
+  <!--Initializes the JQuery library-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  
+  <!--Waits for the page to finish loading before executing code-->
+  <script>$(document).ready(function(){
+  
+	<!--Initializes the strongContent variable to -->
+	<!--store the contents of the strong element as well as the tags-->
+    var strongContent = $('strong').html();
+	
+	<!--Initializes the pContent variable to -->
+	<!--store the contents of the p element as well as the tags-->
+	var pContent = $('p').html();
+	
+	<!--Puts the contents of the pContent variable into the strong element, replacing the tags-->
+	$('strong').html(pContent);
+	
+	<!--Puts the contents of the strongContent variable into the p element, replacing the tags-->
+	$('p').html(strongContent);
+    })
+  </script>
+</head>
+<body>
+  <strong>This is the code in the strong element.</strong>
+  <p>This is the code in the P element.
+  <img src="images/cover1.jpg" alt="cover1"> </p>
+</body>
+</html>

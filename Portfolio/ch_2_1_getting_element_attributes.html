@@ -2,10 +2,18 @@
 <html>
 <head>
   <title>My Test Page</title>
-  <script src="js/jquery-2.1.1.min.js"></script><!--Initializes the JQuery Library-->
-  <script>$(document).ready(function(){<!--Waits for the page to finish loading before executing code-->
-    var imageFile = $('img').attr('src'); <!--Declares a var called imageFile and stores the img tag's src attribute-->
-	alert (imageFile);<!--Sends up an alert box with the contents of imageFile-->
+  
+  <!--Initializes the JQuery Library-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  
+  <!--Waits for the page to finish loading before executing code-->
+  <script>$(document).ready(function(){
+  
+    <!--Declares a var called imageFile and stores the img tag's src attribute-->
+    var imageFile = $('img').attr('src');
+	
+	<!--Sends up an alert box with the contents of imageFile-->
+	alert (imageFile);
     })
   </script>
 </head>
